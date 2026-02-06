@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>3dbomb</title>
+    <meta name="author" content="chen">
+  </head>
+  <body>
+    <div align="center">
+      <p>影视广告制作人必成<br>
+        ——3d爆炸</p>
+      <p>金鼠</p>
+      <p align="left">这次我们要做一个粒子特效练习，把一个文本炸碎。</p>
+      <p align="left">首先建立文本，做成导角金属字，或者别的什么。然后放置一架摄像机，选用free自由相机，在front前视图中点击。</p>
+      <p align="left"><img src="033d_bomb_text/bom01.jpg" height="625" width="800">
+      </p>
+      <p align="left">把一个视窗切换为相机视图，利用移动工具把摄像机放到合适位置，使文本看起来正好在视觉中心。按下动画时间设置按钮，设定动
+        画长度。</p>
+      <p align="left"><img src="033d_bomb_text/bom02.jpg" height="625" width="800">
+      </p>
+      <p align="left">选用PAL制式，设定2秒钟的动画。</p>
+      <p align="left"><img src="033d_bomb_text/bom03.jpg" height="430" width="389">
+      </p>
+      <p align="left">建立粒子物体，从创建面板几何体标签下打开下拉式菜单，选择particle
+        systems粒子系统，这里有6种发射器类型，按下PArray粒子阵列，然后在任意视图中点击拖动建立一个图标。</p>
+      <p align="left"><img src="033d_bomb_text/bom04.jpg" height="625" width="800">
+      </p>
+      <p align="left">粒子物体的控制参数很多，但你并不一定都要理会。</p>
+      <p align="left">在PArray的控制面板上，按下pick
+        object按钮，为粒子指定发射器，到视图中点击文本物体，你会看到文本的名称出现在按钮下方。粒子显示方式可选择mesh项，这样会把形状显示在视图中。</p>
+      <p align="left"><img src="033d_bomb_text/bom05.jpg" height="625" width="800"></p>
+      <p align="left">在particle
+        type粒子类型折叠栏下面，选择object类型，这样粒子的形态就会是发射器的样子。在下面设定碎片的数目，选择number
+        of……项，并在参数框中输入一定数目。</p>
+      <p align="left"><img src="033d_bomb_text/bom06.jpg" height="625" width="800">
+      </p>
+      <p align="left">对材质的控制选择picked方式，然后按一下get material
+        from按钮，这样粒子的材质就从文本物体获得。还可增加粒子旋转运动的变化。</p>
+      <p align="left"><img src="033d_bomb_text/bom07.jpg" height="625" width="800">
+      </p>
+      <p align="left">把文本物体隐藏。 </p>
+      <p align="left">回到PArray面板上部，调整粒子基本参数，life控制粒子的生命值，我们可设定存活50帧，然后可拖动时间滑块观察，
+        调整speed粒子速度，到动画结束时刚好碎块要飞出画面。</p>
+      <p align="left"><img src="033d_bomb_text/bom08.jpg" height="625" width="800">
+      </p>
+      <p align="left">好了，设置完毕，可以渲染输出了。</p>
+    </div>
+  </body>
+</html>

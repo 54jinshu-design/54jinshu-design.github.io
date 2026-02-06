@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>3detablepolybottle</title>
+    <meta name="author" content="chen">
+  </head>
+  <body text="#000000" bgcolor="#999999">
+    <div align="center">
+      <p>矿泉水瓶子——3dsmax的etablepoly建模 <br>
+        （金鼠） </p>
+      <p align="left">首先，建立一个box，大致设一下段数。</p>
+      <p align="left"><img src="bottleimage/01.jpg" height="625" width="800"></p>
+      <p align="left">把物体转换为etablepoly，删除顶面。</p>
+      <p align="left"><img src="bottleimage/02.jpg" height="625" width="800"></p>
+      <p align="left">接下来使用etablepoly物体的子选择集，就足够了！选顶点子集，利用move、scale工具移动和缩放点，调出大
+        体形状。</p>
+      <p align="left"><img src="bottleimage/03.jpg" height="625" width="800"></p>
+      <p align="left">这时可以关闭子集，回到上面，勾选面板上的use
+        nurms选项，并在下面的参数项设为1，值越高越光滑，看到光滑后的形态。</p>
+      <p align="left"><img src="bottleimage/04.jpg" height="625" width="800"></p>
+      <p align="left">然后，再次选择点子集，看看，仍是低密度网格，显示的实体确是光滑的哦！在此状态下继续调整，直到较为准确。面板上还有很多
+        命令，可以增添细节，其他的子集也各有用途哦，足够胜任一切复杂造型啦！<br>
+        <img src="bottleimage/05.jpg" height="625" width="800"> </p>
+      <p align="left">下面做嘴，新建一个圆柱体，把它转换为etablepoly，删掉顶和底的面。</p>
+      <p align="left"><img src="bottleimage/06.jpg" height="625" width="800"></p>
+      <p align="left">注意，为了下一步焊接点，要考虑一下圆周的顶点数，要与接口处一致，这样会更顺利的。 <br>
+        选择瓶体部分，不进入子集，按下面板上的合并钮，再点击瓶嘴，合为一个物体。<br>
+        <img src="bottleimage/07.jpg" height="625" width="800"> </p>
+      <p align="left">然后就是手动焊接点，etablepoly的焊接点有两种方式，呵呵！很好用哦！</p>
+      <p align="left"><img src="bottleimage/08.jpg" height="625" width="800"></p>
+      <p align="left">继续加工，拽拽点，拉拉线，就出来了。 <br>
+        这个模型的问题是显而易见的，首先，它没有厚度，而且，瓶口应该是螺旋纹。但是，通常用于商业用途的，会是盛满水的瓶子，没有厚度并不妨碍折射表现，并且
+        瓶口会盖上盖子，你甚至连螺纹都不需要做。这个例子并非只是让你学习做一只瓶子，你可把这种技术举一反三、用于任何建模。</p>
+      <p align="left"><img src="bottleimage/09.jpg" height="625" width="800"></p>
+      <p align="left"><br>
+        max的多边形建模，通常可以用基本几何体+edit mesh+mesh
+        smooth，或是转换为etablemesh，而etablepoly是max4版本以后新增的，有许多优越特性，比如，在etablepoly中做切分面时不会象
+        mesh中出现多余的点，并且它本身就带了nurms圆滑，还有，它的各个子集中都有cut命令，得到的结果不一样哦。其他的方法希望大家一起用吧！ <br>
+        个人觉得，多边形建模是效率最高、最方便直观的方法，也足以胜任任何复杂造型，最有利的是，你可以控制模型的密度。 </p>
+    </div>
+  </body>
+</html>

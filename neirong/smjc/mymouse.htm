@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>3dmouse</title>
+    <meta name="author" content="chen">
+  </head>
+  <body>
+    <div align="center">
+      <p>用3dsmax做一支鼠标的一种思路和方法<br>
+        金鼠</p>
+      <p align="left">我不用详尽的解释各个步骤，假如你已掌握各种建模方式，我只提供一个思路，和简要的制作过程。我想，对于鼠标物体，难点就是
+        作缝隙了。也许你可以用布尔运算，但那样会出现讨厌的多余点和废面，因此，我提供的这个制作方法是不用布尔运算而又方便准确地作出缝隙的。 </p>
+      <p align="left">首先，用line线条作出基本框架结构，注意，在出现鼠标缝隙的地方划出相应线条，并且线结构的任意部分都要组成四边形或三
+        边形。 </p>
+      <p align="left"><img src="mouse/01line.jpg.jpg" height="409" width="541"></p>
+      <p align="left">然后添加surface修改器，形状就出来了。这里我为了下一步操作简便，把steps步幅设置到最低，保持一个低分辨率网
+        格，如果要保证模型的圆滑细致则应把这里设置较高。</p>
+      <p align="left"><img src="mouse/02surface.jpg.jpg" height="673" width="729"></p>
+      <p align="left">再添加一个edit mesh修改，并进入edge边子集，选中将要作出缝隙的边，使用chamfer命令把边扩展出面。</p>
+      <p align="left"><img src="mouse/03edge.jpg.jpg" height="776" width="729"></p>
+      <p align="left">切换到polygon子集，把将要作出缝隙的面选中，利用extrude命令向内挤出面，注意下面选中local方式。</p>
+      <p align="left"><img src="mouse/04emian.jpg.jpg" height="833" width="730"></p>
+      <p align="left">这样缝隙就做好了。模型绝对整洁，没有多余点和废面。</p>
+      <p align="left"><img src="mouse/mousefinal.jpg" height="499" width="639"></p>
+      <p align="left">这个建模方式是结合了patch和mesh，把这种方法引申，应该不失为一个便捷的办法。</p>
+    </div>
+  </body>
+</html>

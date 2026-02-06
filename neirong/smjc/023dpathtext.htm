@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>3dtextpath</title>
+    <meta name="author" content="chen">
+  </head>
+  <body>
+    <div align="center">
+      <p>影视广告制作人必成<br>
+        ——3d文字路径变形</p>
+      <p>金鼠</p>
+      <p align="left">我们将做一个地球模型，然后让一行文本绕地球转动。</p>
+      <p align="left">在创建面板按下sphere按钮建立一个球体，把球体半径设为适当大小。</p>
+      <p align="left"><img src="023d_earth_rote_text/path01.jpg" height="625" width="800">
+      </p>
+      <p align="left">下面赋予球体材质，使它成为地球。打开材质编辑器，任选一个材质球，按下diffuse固有色旁边的按钮选择贴图。</p>
+      <p align="left"><img src="023d_earth_rote_text/path02.jpg" height="821" width="367">
+      </p>
+      <p align="left">贴图类型选位图。</p>
+      <p align="left"><img src="023d_earth_rote_text/path03.jpg" height="751" width="332">
+      </p>
+      <p align="left">我们需要一张地球的图像文件，如果你没有更好的，可使用下图。</p>
+      <p align="left"><img src="023d_earth_rote_text/EarthMap.jpg" height="400"
+          width="800"> </p>
+      <p align="left">选好之后，把材质赋予球体，你可按下材质编辑器上的那个按钮，这会使贴图显示在视图中。</p>
+      <p align="left"><img src="023d_earth_rote_text/path05.jpg" height="821" width="367">
+      </p>
+      <p align="left">设定整个场景的动画时间，按下时间设置按钮。</p>
+      <p align="left"><img src="023d_earth_rote_text/path06.jpg" height="625" width="800">
+      </p>
+      <p align="left">弹出窗口，请先选择pal制式，这是我们使用的电视制式，每秒动画将由25帧画面组成，在下面动画结束时间栏里输入74，这
+        样我们就决定了做一段3秒钟的动画。</p>
+      <p align="left"><img src="023d_earth_rote_text/path07.jpg" height="430" width="389">
+      </p>
+      <p align="left">打开auto key自动动画记录按钮，把时间滑块移动到末帧。</p>
+      <p align="left"><img src="023d_earth_rote_text/path08.jpg" height="625" width="800">
+      </p>
+      <p align="left">选择旋转工具，可按下屏幕上端的角度锁定按钮，这会使旋转按照5度的增量进行，点选地球，使它沿z轴旋转若干角度，或直接在
+        下面参数框里输入角度数值。</p>
+      <p align="left"><img src="023d_earth_rote_text/path09.jpg" height="625" width="800">
+      </p>
+      <p align="left">关闭动画记录按钮，地球的动画设定完成，或许你还需要调整运动切线，暂且不提。</p>
+      <p align="left">接着我们要做文字运动用的路径，选择创建线条中的圆形物体，在顶视图中建立一个圆，把它的半径设为刚好大于地球半径。</p>
+      <p align="left"><img src="023d_earth_rote_text/path10.jpg" height="625" width="800">
+      </p>
+      <p align="left">创建导角字，并赋予金属材质。</p>
+      <p align="left"><img src="023d_earth_rote_text/path11.jpg" height="625" width="800">
+      </p>
+      <p align="left">给文本物体添加pathdeform修改器，在它的控制面板上按下pick
+        path选择路径按钮，到视图中点选刚才创建的圆形。</p>
+      <p align="left"><img src="023d_earth_rote_text/path12.jpg" height="625" width="800">
+      </p>
+      <p align="left">可以看到文字已经发生了变形，但可能方向有问题，进入pathdeform修改器的子层级，选中gizmo，使用旋转工具旋
+        转到合适角度，直到文字正好以圆形中心为圆心变形。</p>
+      <p align="left"><img src="023d_earth_rote_text/path13.jpg" height="625" width="800">
+      </p>
+      <p align="left">建立摄像机，选择free自由相机，在前视图点击创建。</p>
+      <p align="left"><img src="023d_earth_rote_text/path14.jpg" height="625" width="800">
+      </p>
+      <p align="left">为了更好地观察构图，进行如下设定。按下工具条上的按钮打开渲染设置窗口。</p>
+      <p align="left"><img src="023d_earth_rote_text/path15.jpg" height="625" width="800">
+      </p>
+      <p align="left">选择对应的输出尺寸，下拉式窗口中有一些预设，我们选择PAL D-1(video)方式。</p>
+      <p align="left"><img src="023d_earth_rote_text/path16.jpg" height="820" width="458">
+      </p>
+      <p align="left">回到视图中，把其中一个视图切换为摄像机视图，快捷键是按下键盘上的C，并用右键点击该试图的名称位置，出现快捷菜单，选择
+        show safe frame显示安全框。这同时会使视图显示为输出的比例。</p>
+      <p align="left"><img src="023d_earth_rote_text/path17.jpg" height="625" width="800">
+      </p>
+      <p align="left">好了，现在使用移动工具调整摄像机位置，直到构图令人满意，我同时把摄像机旋转了一定角度。</p>
+      <p align="left"><img src="023d_earth_rote_text/path18.jpg" height="625" width="800">
+      </p>
+      <p align="left">接着就可以做文字的运动了。调整文字物体pathdeform修改器的percent参数，使第一个字刚好出现。</p>
+      <p align="left"><img src="023d_earth_rote_text/path19.jpg" height="625" width="800">
+      </p>
+      <p align="left">打开auto
+        key记录动画，时间滑块移动到最后一帧，增大percent参数数值到文字物体最后一字即将消失的程度。关闭动画记录。</p>
+      <p align="left"><img src="023d_earth_rote_text/path20.jpg" height="625" width="800">
+      </p>
+      <p align="left">选择目标聚光灯，在视图中点击并拖动建立灯光，大体位置如图。</p>
+      <p align="left"><img src="023d_earth_rote_text/path21.jpg" height="625" width="800">
+      </p>
+      <p align="left">进一步调整灯光角度位置，渲染测试效果，加以调整。若想投射阴影，便勾选灯光物体面板上的on复选框。</p>
+      <p align="left"><img src="023d_earth_rote_text/path22.jpg" height="625" width="800">
+      </p>
+      <p align="left">调整好之后，就到了最后输出了。打开渲染设置窗口，把时间输出选为active
+        time也就是我们设定的动画总长度。注意输出尺寸用我们的电视制式。按下files……按钮选择输出路径和格式。</p>
+      <p align="left"><img src="023d_earth_rote_text/path23.jpg" height="820" width="458">
+      </p>
+      <p align="left">出于对画面质量的要求和为了便于后期编辑，通常最好的选择是tga序列图像格式。给文件取名。</p>
+      <p align="left"><img src="023d_earth_rote_text/path24.jpg" height="450" width="455">
+      </p>
+      <p align="left">tga图像的设置选择32位，能够存储alpha通道，这样当我们把本实例调入后期软件合成时，背景就是透明的。</p>
+      <p align="left"><img src="023d_earth_rote_text/path25.jpg" height="319" width="431">
+      </p>
+      <p align="left">一切准备妥当，按下render按钮输出，终于看到结果了！</p>
+      <p align="left"><img src="023d_earth_rote_text/path26.jpg" height="625" width="800">
+      </p>
+    </div>
+  </body>
+</html>

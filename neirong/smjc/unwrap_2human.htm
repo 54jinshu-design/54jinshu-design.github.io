@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>unwrap2</title>
+    <meta name="author" content="chen">
+  </head>
+  <body>
+    <div align="center">
+      <p>unwrap——分配坐标和展开网格</p>
+      <p>金鼠</p>
+      <p align="left">这次我们仅仅使用unwrap修改器，把模型各部分分配坐标并展平它，用来最终为模型赋予一张贴图。下面将以我做的一个人体
+        模型为例。</p>
+      <p align="left">准备好模型，添加unwrap uvw修改器，并按下面板上的edit按钮，以打开unwrap的控制视窗。</p>
+      <p align="left"><img src="un_human/uh01.jpg" height="800" width="1024"></p>
+      <p align="left">打开了unwrap的控制视窗，这时还没有分配坐标，所以这里显示的是混乱的，我们将分别选择不同部分，再展平它。进入
+        unwrap的子集select face方式，这样视图中被选中的面和edit
+        uvws视窗中的节点将同步显示。使用选择工具，配合ctrl和alt键多选和减选面，选中躯干部分。这时在视图中出现了黄色方框，就是贴图坐标了。unwrap只有平面
+        坐标，但有轴向的分别，目前是不恰当的。</p>
+      <p align="left"><img src="un_human/uh02.jpg" height="800" width="1024"></p>
+      <p align="left">在面板上选中y轴，然后按下planar map把这一部分确定并分离出来，在edit
+        uvws视窗中把它从重叠的网格中拿开，放到一边。</p>
+      <p align="left"><img src="un_human/uh03.jpg" height="800" width="1024"></p>
+      <p align="left">这一部分实际上包括了身体的前面和后面，我们再把它分开。打开mapping菜单，选择normal mapping。</p>
+      <p align="left"><img src="un_human/uh04.jpg" height="832" width="630"></p>
+      <p align="left">弹出菜单，展开方式有几种，就使用第一种，以前后分开。</p>
+      <p align="left"><img src="un_human/uh05.jpg" height="152" width="338"></p>
+      <p align="left">这样就把身体部分又分成了两份，正面和背面，把它放到适当位置。</p>
+      <p align="left"><img src="un_human/uh06.jpg" height="832" width="630"></p>
+      <p align="left">下面选择头部，可勾选视窗中的选择整体选项，这样就会一次选中一个独立部分。检查坐标轴向没有问题，按下planar
+        map按钮。</p>
+      <p align="left"><img src="un_human/uh07.jpg" height="800" width="1024"></p>
+      <p align="left">同样需要把头部前后分开。用normal mapping工具。</p>
+      <p align="left"><img src="un_human/uh08.jpg" height="832" width="630"></p>
+      <p align="left">选择手部，调整轴向为z，按下planar map按钮。</p>
+      <p align="left"><img src="un_human/uh09.jpg" height="800" width="1024"></p>
+      <p align="left">还要把手的两面分开，使用normal mapping。</p>
+      <p align="left"><img src="un_human/uh10.jpg" height="832" width="630"></p>
+      <p align="left">在弹出的窗口中选择top/bottom mapping方式，从上下分开手部。</p>
+      <p align="left"><img src="un_human/uh11.jpg" height="152" width="338"></p>
+      <p align="left">用上述的方法把其余部分分出来。</p>
+      <p align="left"><img src="un_human/uh12.jpg" height="800" width="1024"></p>
+      <p align="left">可把某些部分缩放面积大小。所有部分都应聚集到那个粗蓝方框中，unwrap也提供了自动完成的工具，在tools菜单下选
+        择pack uvs，有两种方式可选，一种速度快、一种更合理。 而在我的模型并不复杂的情况下，我更愿手动把每一部分放入篮框中。</p>
+      <p align="left"><img src="un_human/uh13.jpg" height="832" width="630"></p>
+      <p align="left">好了，可以贴图了。你可直接用三维画笔软件在模型上绘制贴图，到时贴图就会保存为这种状况，或是把这张图截屏存下来作为模
+        板，调入二维绘图软件中绘制贴图；赋予贴图之后，还可在这里移动节点，使网格与贴图更精确对位。</p>
+      <p align="left"><img src="un_human/uh14.jpg" height="832" width="630"></p>
+      <p align="left">当然你可以划分出你认为更合理的部分，而与我所作的不同。我的方法是抛砖引玉罢了。这只是刚刚开始，绘制一张漂亮的贴图并非
+        易事，若要动画她，还有大量的工作等着做呢！</p>
+      <p align="left"><img src="un_human/uh15.jpg" height="800" width="1024"></p>
+    </div>
+  </body>
+</html>

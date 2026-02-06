@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>unwrap1</title>
+    <meta name="author" content="chen">
+  </head>
+  <body>
+    <p align="center">3dsmax的unwrap——一张贴图赋予多重坐标</p>
+    <p align="center">金鼠</p>
+    <p>unwrap
+      uvw是3dsmax的一个强大的编辑器，可有效的解决不规则模型的贴图以及贴图的拉伸变形问题，它通过把模型展平，使你精准的把网格与贴图对位。
+      当然也经常需要配合uvw map修改器来赋予模型适当坐标， 然后再使用unwrap
+      uvw按既定贴图坐标方式来展开模型。我们有时会看到这种情况，一个具有多种形状组合的模型，却使用一张贴图，上面绘制了所有的部分、并列在一起，这是如何做到的呢？我们
+      现在就来演示这种方式。</p>
+    <p>我们以一个茶壶为例，建立一个茶壶物体，并转换为editable
+      poly网格物体。观察茶壶模型，你会发现它无法被准确地使用一个现成的贴图坐标来定义，于是我们将把它拆分，给不同局部赋予不同坐标。</p>
+    <p><img src="un/un01.jpg" height="744" width="1024"></p>
+    <p>添加poly select修改器，进入子集，选择如图部分。</p>
+    <p><img src="un/un02.jpg" height="744" width="1024"></p>
+    <p>保持面被选中的状态，添加uvw map修改，并选中圆柱坐标方式。</p>
+    <p><img src="un/un03.jpg" height="744" width="1024"></p>
+    <p>继续添加poly select修改，进入子集，选中底面。</p>
+    <p><img src="un/un04.jpg" height="744" width="1024"></p>
+    <p>添加uvw map修改，选择平面贴图坐标。</p>
+    <p><img src="un/un05.jpg" height="744" width="1024"></p>
+    <p>添加poly select修改，选中图示的面。</p>
+    <p><img src="un/un06.jpg" height="744" width="1024"></p>
+    <p>添加uvw map修改，选择平面坐标。</p>
+    <p><img src="un/un07.jpg" height="744" width="1024"></p>
+    <p>添加poly select修改，选中如图部分。</p>
+    <p><img src="un/un08.jpg" height="744" width="1024"></p>
+    <p>添加uvw map修改，赋予圆柱坐标。</p>
+    <p><img src="un/un09.jpg" height="744" width="1024"></p>
+    <p>添加poly select并选中茶壶嘴部分。</p>
+    <p><img src="un/un10.jpg" height="744" width="1024"></p>
+    <p>添加uvw map修改器，赋予平面坐标。</p>
+    <p><img src="un/un11.jpg" height="744" width="1024"></p>
+    <p>此时坐标的方向是不合适的，选择uvw
+      map的gizmo，使用旋转工具把它旋转为如图状态，然后按下面板上的fit按钮，使坐标范围适合于茶壶嘴部分，退出gizmo。</p>
+    <p><img src="un/un12.jpg" height="744" width="1024"></p>
+    <p>继续作，添加poly select修改器，选中把手部分。</p>
+    <p><img src="un/un13.jpg" height="744" width="1024"></p>
+    <p>添加uvw map修改器，选择平面贴图坐标。也需要调整坐标的gizmo方向，方法同上。</p>
+    <p><img src="un/un14.jpg" height="744" width="1024"></p>
+    <p>至此所有部分的贴图坐标设定完成，把修改器塌陷，或者把模型再转换一次。</p>
+    <p><img src="un/un15.jpg" height="744" width="1024"></p>
+    <p>这样前边所有的坐标设定都被并入物体，该unwrap出场了。添加unwrap uvw修改器，按下其面板上的edit按钮。</p>
+    <p><img src="un/un16.jpg" height="744" width="1024"></p>
+    <p>打开了被展平的网格视窗，但现在显得很杂乱，因为各部分重叠在一起。我们需要手动把各部分分离。</p>
+    <p><img src="un/un17.jpg" height="744" width="1024"></p>
+    <p>打开unwrap uvw的子集select face，这样在模型上选中的面将会同步显示在edit
+      uvws视窗中，此时自动选中了最后一次被选中的部分，那就先把这个茶壶把手拿开，如图。</p>
+    <p><img src="un/un18.jpg" height="744" width="1024"></p>
+    <p>依次选中前边分别赋予不同坐标的部分，然后在edit uvws视窗中把各部分移动到适当位置，使它们不重叠。</p>
+    <p><img src="un/un19.jpg" height="744" width="1024"></p>
+    <p>至此，你应该已经明白了，我们已经可以按我们要求的坐标方式贴图了，通过材质编辑器赋予物体材质，给基本色添加位图。你可用这个展开网格图作为模板，调入别
+      的绘画软件中绘制表面贴图，而且都会被记录在这一张图上；或是使用一张现成的图片，你可移动、旋转或是缩放每个部分，使其对应到图片的不同部分。</p>
+    <p><img src="un/un20.jpg" height="744" width="1024"></p>
+    <p>这个实例只是说明了原理和基本方法，你完全可以做得更为细致！</p>
+  </body>
+</html>

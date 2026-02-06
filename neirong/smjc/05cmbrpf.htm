@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>combustion2</title>
+    <meta name="author" content="chen">
+  </head>
+  <body>
+    <div align="center">
+      <p>影视广告制作人必成<br>
+        ——combustion特效之rpf运动模糊</p>
+      <p>金鼠</p>
+      <p align="left">同属discreet公司出品的合成软件combustion提供了对3dsmax很好的支持，由3d生成的文件可在
+        combustion中作更多的处理。把3d与合成完美结合的是rpf文件格式，这种格式由3d软件生成，可存储更多的通道信息。</p>
+      <p align="left">在3dsmax中，我们制做一段粒子爆炸的动画，render渲染输出的文件格式选择rpf。</p>
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/rpf01.jpg" height="450"
+          width="455"></p>
+      <p align="left">出现rpf文件的选项设置窗口，勾选store alpha
+        channel保存透明通道，在右边的3dsmax通道信息中，各个选项有不同作用，这里我们将对快速运动的物体做运动模糊的处理，所以勾选velocity选项，记录速
+        率信息。按下ok，然后生成动画序列。</p>
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/rpf02.jpg" height="300"
+          width="575"></p>
+      <p align="left">启动combustion，new新建一个合成项目。</p>
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/cmb_rpf01.jpg" height="999"
+          width="1280"></p>
+      <p align="left">进行合成设置，duration持续时间设为与即将导入的动画素材一致，需要注意的是，这里的合成模式mode后面选择
+        3d，建立一个3d合成。</p>
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf02.jpg" height="326"
+          width="380"></p>
+      <p align="left">然后导入素材。</p>
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf03.jpg" height="999"
+          width="1280"></p>
+      <p align="left">选择已经生成好的rpf文件。</p>
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf04.jpg" height="801"
+          width="963"></p>
+      <p align="left">在合成中选中刚导入的素材，点开operators菜单，添加一个rpf motion blur运动模糊特效滤镜。</p>
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf05.jpg" height="999"
+          width="1280"></p>
+      <p align="left">打开animate动画记录按钮，把时间标移动到第9帧，或是在图示位置输入9，切换到rpf motion
+        blur的控制面板，把amount的值设到100，表示从动画开始到第9帧之后运动模糊达到100。</p>
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf06.jpg" height="999"
+          width="1280"></p>
+      <p align="left">之后关闭动画纪录。我们可以拖动时间条预览，原素材已经发生了运动模糊，这样看起来更加接近于现实的视觉效果。再利用
+        combustion的内置粒子库加一个星空背景。</p>
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf07.jpg" height="999"
+          width="1280"></p>
+      <p align="left">好，最后输出动画。到files菜单按下render，文件格式选tga，通道选color不用保存透明，设好输出路径、取
+        文件名，按下process按钮生成动画。</p>
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf08.jpg" height="643"
+          width="1018"></p>
+      <p align="left"><a href="05sbomb.rmvb" target="_blank">sample</a></p>
+      <p align="left">利用3dsmax生成rpf格式文件，存储相应的通道信息，然后就可以在combustion中做调节了。
+        虽然这些特效在3dsmax中一样可以完成，但毕竟不如这样来的自由，并且节省资源，渲染决不会慢。试想，在三维软件中每修改一次就要重新渲染，那是多么耗时费力呀！</p>
+      <p align="left">&nbsp;</p>
+    </div>
+  </body>
+</html>
