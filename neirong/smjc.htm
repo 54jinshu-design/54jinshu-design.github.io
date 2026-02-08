@@ -1,6 +1,41 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
+  <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  /* 仅在屏幕宽度小于 768px（手机和平板竖屏）时生效 */
+  @media screen and (max-width: 768px) {
+    
+    /* 强制让表格的所有组成部分都变成“块级元素”，从而上下排列 */
+    table, thead, tbody, tr, td { 
+      display: block !important; 
+      width: 100% !important; 
+      box-sizing: border-box;
+    }
+
+    /* 居中处理内容 */
+    td {
+      text-align: center !important;
+      padding: 10px !important;
+      border: none !important;
+    }
+
+    /* 极其重要：确保图片不会撑破屏幕 */
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* 确保嵌入的 YouTube 视频也自适应宽度 */
+    iframe {
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9; /* 保持 16:9 的比例 */
+    }
+  }
+</style>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>digitutrail</title>
     <script language="JavaScript" type="text/JavaScript">
@@ -30,27 +65,34 @@ function MM_swapImage() { //v3.0
 //-->
 </script> <meta name="author" content="chen">
   </head>
-  <body onload="MM_preloadImages('smjc-fhsy2.gif','smjc-msjx2.gif','smjc-zpzs2.gif')"
+  <body onload="MM_preloadImages('smjc-fhsy2.gif','smjc-msjx2.gif','smjc-zpzs2.gif')"
+
     alink="#FFCC00" vlink="#FFFFFF" text="#FFFFFF" link="#CCCCCC" bgcolor="#666666">
-    <p align="center"><a href="mysm.html">素描艺术</a> <a href="mysc.html">色彩艺术</a>
-      <a href="../dms.html" target="_blank">商业作品</a> <a href="ziji.html">个人简介</a>
-      <a href="mailto:54jinshu@gmail.com">联系本人</a></p>
-    <table align="center" height="494" width="500" cellspacing="0" cellpadding="0"
+    <p align="center"><a href="mysm.html">素描艺术</a> <a href="mysc.html">色
+        彩艺术</a> <a href="../dms.html" target="_blank">商业作品</a> <a href="ziji.html">个
+        人简介</a> <a href="mailto:54jinshu@gmail.com">联系本人</a></p>
+    <table align="center" height="494" width="500" cellspacing="0" cellpadding="0"
+
       bordercolor="#000000" border="5" bgcolor="#000000">
       <tbody>
         <tr>
-          <td width="23%"><a href="../index.html" onmouseout="MM_swapImgRestore()"
-              onmouseover="MM_swapImage('Image2','','smjc-fhsy2.gif',1)"><img src="smjc-fhsy1.gif"
+          <td width="23%"><a href="../index.html" onmouseout="MM_swapImgRestore()"
+
+              onmouseover="MM_swapImage('Image2','','smjc-fhsy2.gif',1)"><img src="smjc-fhsy1.gif"
+
                 name="Image2" height="50" width="150" border="0"></a></td>
-          <td rowspan="3" width="77%" bgcolor="#000000"><img src="../image/jinshu.jpg"
+          <td rowspan="3" width="77%" bgcolor="#000000"><img src="../image/jinshu.jpg"
+
               height="150" width="450"></td>
         </tr>
         <tr>
-          <td><a href="msjx.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','smjc-msjx2.gif',1)"><img
+          <td><a href="msjx.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','smjc-msjx2.gif',1)"><img
+
                 src="smjc-msjx1.gif" name="Image3" height="50" width="150" border="0"></a></td>
         </tr>
         <tr>
-          <td><a href="zpzs.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','smjc-zpzs2.gif',1)"><img
+          <td><a href="zpzs.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','smjc-zpzs2.gif',1)"><img
+
                 src="smjc-zpzs1.gif" name="Image4" height="50" width="150" border="0"></a></td>
         </tr>
         <tr bgcolor="#000000">

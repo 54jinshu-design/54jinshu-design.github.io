@@ -1,5 +1,40 @@
 <html>
-  <head>
+  <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  /* 仅在屏幕宽度小于 768px（手机和平板竖屏）时生效 */
+  @media screen and (max-width: 768px) {
+    
+    /* 强制让表格的所有组成部分都变成“块级元素”，从而上下排列 */
+    table, thead, tbody, tr, td { 
+      display: block !important; 
+      width: 100% !important; 
+      box-sizing: border-box;
+    }
+
+    /* 居中处理内容 */
+    td {
+      text-align: center !important;
+      padding: 10px !important;
+      border: none !important;
+    }
+
+    /* 极其重要：确保图片不会撑破屏幕 */
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* 确保嵌入的 YouTube 视频也自适应宽度 */
+    iframe {
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9; /* 保持 16:9 的比例 */
+    }
+  }
+</style>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>viz</title>
     <script language="JavaScript">
@@ -40,10 +75,12 @@ a:link {
 -->
 </style><meta name="author" content="chen">
   </head>
-  <body onload="MM_preloadImages('images/link1b.gif','images/link2b.gif','images/link3b.gif','images/link4b.gif','images/link5b.gif','images/link6b.gif','images/link7b.gif','images/link8b.gif','images/link9b.gif','../images/link2b.gif','../images/link3b.gif','../images/link4b.gif','../images/link5b.gif','../images/link6b.gif','../images/link7b.gif','../images/link8b.gif','../images/link9b.gif','../images/link1b.gif')"
+  <body onload="MM_preloadImages('images/link1b.gif','images/link2b.gif','images/link3b.gif','images/link4b.gif','images/link5b.gif','images/link6b.gif','images/link7b.gif','images/link8b.gif','images/link9b.gif','../images/link2b.gif','../images/link3b.gif','../images/link4b.gif','../images/link5b.gif','../images/link6b.gif','../images/link7b.gif','../images/link8b.gif','../images/link9b.gif','../images/link1b.gif')"
+
     bgcolor="#000000">
     <center>
-      <table height="395" width="605" cellspacing="0" cellpadding="0" bordercolor="#FFFFFF"
+      <table height="395" width="605" cellspacing="0" cellpadding="0" bordercolor="#FFFFFF"
+
         border="0">
         <tbody>
           <tr>
@@ -62,46 +99,71 @@ a:link {
                     <td colspan="4"><img src="../images/left.gif" height="19" width="126"></td>
                   </tr>
                   <tr>
-                    <td colspan="4"><a href="../dms.htm" onmouseout="MM_swapImgRestore()"
-                        onmouseover="MM_swapImage('Image29','','images/link1b.gif',1)"></a><a
-                        href="../dms.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image29','','../images/link1b.gif',1)"><img
-                          src="../images/link1a.gif" name="Image29" height="24"
+                    <td colspan="4"><a href="../dms.htm" onmouseout="MM_swapImgRestore()"
+
+                        onmouseover="MM_swapImage('Image29','','images/link1b.gif',1)"></a><a
+
+                        href="../dms.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image29','','../images/link1b.gif',1)"><img
+
+                          src="../images/link1a.gif" name="Image29" height="24"
+
                           width="126" border="0"></a><a href="dms.htm"></a></td>
                   </tr>
                   <tr>
-                    <td colspan="4"><a href="dms2design.htm" onmouseout="MM_swapImgRestore()"
-                        onmouseover="MM_swapImage('Image2','','images/link2b.gif',1)"></a><a
-                        href="dms2design.html" onmouseout="MM_swapImgRestore()"
-                        onmouseover="MM_swapImage('Image30','','../images/link2b.gif',1)"><img
-                          src="../images/link2a.gif" name="Image30" height="24"
+                    <td colspan="4"><a href="dms2design.htm" onmouseout="MM_swapImgRestore()"
+
+                        onmouseover="MM_swapImage('Image2','','images/link2b.gif',1)"></a><a
+
+                        href="dms2design.html" onmouseout="MM_swapImgRestore()"
+
+                        onmouseover="MM_swapImage('Image30','','../images/link2b.gif',1)"><img
+
+                          src="../images/link2a.gif" name="Image30" height="24"
+
                           width="126" border="0"></a></td>
                   </tr>
                   <tr>
-                    <td colspan="4"><a href="dms3video.html" onmouseout="MM_swapImgRestore()"
-                        onmouseover="MM_swapImage('Image31','','../images/link3b.gif',1)"><img
-                          src="../images/link3a.gif" name="Image31" height="24"
-                          width="126" border="0"></a><a href="dms3video.htm" onmouseout="MM_swapImgRestore()"
+                    <td colspan="4"><a href="dms3video.html" onmouseout="MM_swapImgRestore()"
+
+                        onmouseover="MM_swapImage('Image31','','../images/link3b.gif',1)"><img
+
+                          src="../images/link3a.gif" name="Image31" height="24"
+
+                          width="126" border="0"></a><a href="dms3video.htm" onmouseout="MM_swapImgRestore()"
+
                         onmouseover="MM_swapImage('Image3','','images/link3b.gif',1)"></a></td>
                   </tr>
                   <tr>
-                    <td colspan="4"><a href="dms4idea.htm" onmouseout="MM_swapImgRestore()"
-                        onmouseover="MM_swapImage('Image32','','../images/link4b.gif',1)"><img
-                          src="../images/link4a.gif" name="Image32" height="24"
-                          width="126" border="0"></a><a href="dms4idea.htm" onmouseout="MM_swapImgRestore()"
+                    <td colspan="4"><a href="dms4idea.htm" onmouseout="MM_swapImgRestore()"
+
+                        onmouseover="MM_swapImage('Image32','','../images/link4b.gif',1)"><img
+
+                          src="../images/link4a.gif" name="Image32" height="24"
+
+                          width="126" border="0"></a><a href="dms4idea.htm" onmouseout="MM_swapImgRestore()"
+
                         onmouseover="MM_swapImage('Image4','','images/link4b.gif',1)"></a></td>
                   </tr>
                   <tr>
-                    <td colspan="4"><a href="dms5paint.htm" onmouseout="MM_swapImgRestore()"
-                        onmouseover="MM_swapImage('Image33','','../images/link5b.gif',1)"><img
-                          src="../images/link5a.gif" name="Image33" height="24"
-                          width="126" border="0"></a><a href="dms5paint.htm" onmouseout="MM_swapImgRestore()"
+                    <td colspan="4"><a href="dms5paint.htm" onmouseout="MM_swapImgRestore()"
+
+                        onmouseover="MM_swapImage('Image33','','../images/link5b.gif',1)"><img
+
+                          src="../images/link5a.gif" name="Image33" height="24"
+
+                          width="126" border="0"></a><a href="dms5paint.htm" onmouseout="MM_swapImgRestore()"
+
                         onmouseover="MM_swapImage('Image5','','images/link5b.gif',1)"></a></td>
                   </tr>
                   <tr>
-                    <td colspan="4"><a href="dms6viz.htm" onmouseout="MM_swapImgRestore()"
-                        onmouseover="MM_swapImage('Image34','','../images/link6b.gif',1)"><img
-                          src="../images/link6c.gif" name="Image34" height="24"
-                          width="126" border="0"></a><a href="dms6viz.htm" onmouseout="MM_swapImgRestore()"
+                    <td colspan="4"><a href="dms6viz.htm" onmouseout="MM_swapImgRestore()"
+
+                        onmouseover="MM_swapImage('Image34','','../images/link6b.gif',1)"><img
+
+                          src="../images/link6c.gif" name="Image34" height="24"
+
+                          width="126" border="0"></a><a href="dms6viz.htm" onmouseout="MM_swapImgRestore()"
+
                         onmouseover="MM_swapImage('Image6','','images/link6b.gif',1)"></a></td>
                   </tr>
                   <tr>
@@ -118,19 +180,23 @@ a:link {
                   </tr>
                   <tr>
                     <td width="10"><img src="images/spacer.gif" height="1" width="10"></td>
-                    <td width="1" bgcolor="#000000"><img src="images/spacer.gif"
+                    <td width="1" bgcolor="#000000"><img src="images/spacer.gif"
+
                         height="1" width="1"></td>
                     <td width="114"><img src="images/spacer.gif" height="1" width="114"></td>
-                    <td width="1" bgcolor="#000000"><img src="images/spacer.gif"
+                    <td width="1" bgcolor="#000000"><img src="images/spacer.gif"
+
                         height="1" width="1"></td>
                   </tr>
                   <tr>
                     <td><br>
                     </td>
-                    <td bgcolor="#000000"><img src="images/spacer.gif" height="1"
+                    <td bgcolor="#000000"><img src="images/spacer.gif" height="1"
+
                         width="1"></td>
                     <td>&nbsp; </td>
-                    <td bgcolor="#000000"><img src="images/spacer.gif" height="1"
+                    <td bgcolor="#000000"><img src="images/spacer.gif" height="1"
+
                         width="1"></td>
                   </tr>
                   <tr>
@@ -159,19 +225,24 @@ a:link {
                         <tbody>
                           <tr>
                             <td colspan="2" width="100%"><br>
-                              <table width="63%" cellspacing="10" cellpadding="0"
+                              <table width="63%" cellspacing="10" cellpadding="0"
+
                                 border="0">
                                 <tbody>
                                   <tr>
                                     <td>
-                                      <div align="center"><a href="zuopin/class001.jpg"
-                                          target="_blank"><img src="zuopin/class001x.jpg"
+                                      <div align="center"><a href="zuopin/class001.jpg"
+
+                                          target="_blank"><img src="zuopin/class001x.jpg"
+
                                             height="100" width="133" border="0"></a></div>
                                       <div class="STYLE2" align="center">scanline</div>
                                     </td>
                                     <td>
-                                      <div align="center"><a href="zuopin/class_vray2.jpg"
-                                          target="_blank"><img src="zuopin/class_vray2x.jpg"
+                                      <div align="center"><a href="zuopin/class_vray2.jpg"
+
+                                          target="_blank"><img src="zuopin/class_vray2x.jpg"
+
                                             height="100" width="139" border="0"></a><br>
                                         <span class="STYLE2">VRay,default light</span>
                                       </div>
@@ -179,28 +250,36 @@ a:link {
                                   </tr>
                                   <tr>
                                     <td>
-                                      <div align="center"><a href="zuopin/class_vray_skylight02.jpg"
-                                          target="_blank"><img src="zuopin/class_vray_skylight02x.jpg"
+                                      <div align="center"><a href="zuopin/class_vray_skylight02.jpg"
+
+                                          target="_blank"><img src="zuopin/class_vray_skylight02x.jpg"
+
                                             height="100" width="137" border="0"></a><br>
                                         <span class="STYLE2">VRay,skylight</span></div>
                                     </td>
                                     <td>
-                                      <div align="center"><a href="zuopin/class_vray_skylight01.jpg"
-                                          target="_blank"><img src="zuopin/class_vray_skylight01x.jpg"
+                                      <div align="center"><a href="zuopin/class_vray_skylight01.jpg"
+
+                                          target="_blank"><img src="zuopin/class_vray_skylight01x.jpg"
+
                                             height="100" width="138" border="0"></a><br>
                                         <span class="STYLE2">VRay,skylight</span></div>
                                     </td>
                                   </tr>
                                   <tr>
                                     <td>
-                                      <div align="center"><a href="zuopin/class_vraylight02.jpg"
-                                          target="_blank"><img src="zuopin/class_vraylight02x.jpg"
+                                      <div align="center"><a href="zuopin/class_vraylight02.jpg"
+
+                                          target="_blank"><img src="zuopin/class_vraylight02x.jpg"
+
                                             height="100" width="140" border="0"></a><br>
                                         <span class="STYLE2">VRay,VRaylight</span></div>
                                     </td>
                                     <td>
-                                      <div align="center"><a href="zuopin/class_vraylight01.jpg"
-                                          target="_blank"><img src="zuopin/class_vraylight01x.jpg"
+                                      <div align="center"><a href="zuopin/class_vraylight01.jpg"
+
+                                          target="_blank"><img src="zuopin/class_vraylight01x.jpg"
+
                                             height="100" width="133" border="0"></a><br>
                                         <span class="STYLE2">VRay,photomap</span></div>
                                     </td>
@@ -214,32 +293,44 @@ a:link {
                               <table style="width: 100%;" cellspacing="5" border="0">
                                 <tbody>
                                   <tr>
-                                    <td style="text-align: center;"><a href="designimage/drawingstudio2.jpg"
-                                        target="_blank"><img src="imagexxx/drawingstudio2.jpg"
+                                    <td style="text-align: center;"><a href="designimage/drawingstudio2.jpg"
+
+                                        target="_blank"><img src="imagexxx/drawingstudio2.jpg"
+
                                           alt=""></a><br>
                                     </td>
-                                    <td style="text-align: center;"><a href="designimage/drawingstudio3%281%29.jpg"
-                                        target="_blank"><img src="imagexxx/drawingstudio3%281%29.jpg"
-                                          alt=""></a><br>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align: center;"><a href="designimage/jifang_omni_scanline.jpg"
-                                        target="_blank"><img src="imagexxx/jifang_omni_scanline.jpg"
-                                          alt=""></a><br>
-                                    </td>
-                                    <td style="text-align: center;"><a href="designimage/psc1.jpg"
-                                        target="_blank"><img src="imagexxx/psc1.jpg"
+                                    <td style="text-align: center;"><a href="designimage/drawingstudio3%281%29.jpg"
+
+                                        target="_blank"><img src="imagexxx/drawingstudio3%281%29.jpg"
+
                                           alt=""></a><br>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td style="text-align: center;"><a href="designimage/psc2.jpg"
-                                        target="_blank"><img src="imagexxx/psc2.jpg"
+                                    <td style="text-align: center;"><a href="designimage/jifang_omni_scanline.jpg"
+
+                                        target="_blank"><img src="imagexxx/jifang_omni_scanline.jpg"
+
                                           alt=""></a><br>
                                     </td>
-                                    <td style="text-align: center;"><a href="designimage/psc3.jpg"
-                                        target="_blank"><img src="imagexxx/psc3.jpg"
+                                    <td style="text-align: center;"><a href="designimage/psc1.jpg"
+
+                                        target="_blank"><img src="imagexxx/psc1.jpg"
+
+                                          alt=""></a><br>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align: center;"><a href="designimage/psc2.jpg"
+
+                                        target="_blank"><img src="imagexxx/psc2.jpg"
+
+                                          alt=""></a><br>
+                                    </td>
+                                    <td style="text-align: center;"><a href="designimage/psc3.jpg"
+
+                                        target="_blank"><img src="imagexxx/psc3.jpg"
+
                                           alt=""></a><br>
                                     </td>
                                   </tr>
@@ -266,7 +357,8 @@ a:link {
           <tr>
             <td><br>
             </td>
-            <td colspan="5" bgcolor="#000000"><img src="images/spacer.gif" height="1"
+            <td colspan="5" bgcolor="#000000"><img src="images/spacer.gif" height="1"
+
                 width="1"></td>
           </tr>
         </tbody>

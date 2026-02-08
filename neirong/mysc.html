@@ -1,6 +1,41 @@
 <!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
 <html>
-  <head>
+  <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  /* 仅在屏幕宽度小于 768px（手机和平板竖屏）时生效 */
+  @media screen and (max-width: 768px) {
+    
+    /* 强制让表格的所有组成部分都变成“块级元素”，从而上下排列 */
+    table, thead, tbody, tr, td { 
+      display: block !important; 
+      width: 100% !important; 
+      box-sizing: border-box;
+    }
+
+    /* 居中处理内容 */
+    td {
+      text-align: center !important;
+      padding: 10px !important;
+      border: none !important;
+    }
+
+    /* 极其重要：确保图片不会撑破屏幕 */
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* 确保嵌入的 YouTube 视频也自适应宽度 */
+    iframe {
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9; /* 保持 16:9 的比例 */
+    }
+  }
+</style>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="generator" content="GoLive CyberStudio 3">
     <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
@@ -9,7 +44,8 @@
     <title>colordrawing</title>
     <meta name="author" content="chen">
   </head>
-  <body onload="dynAnimation()" vlink="#FF00FF" text="#FFFFFF" link="#00FF00" bgcolor="#000000"><x-sas-window
+  <body onload="dynAnimation()" vlink="#FF00FF" text="#FFFFFF" link="#00FF00" bgcolor="#000000"><x-sas-window
+
       top="51" bottom="600" left="79" right="704">
       <meta name="Microsoft Theme" content="none">
       <script language="JavaScript" fptype="dynamicanimation">
@@ -23,10 +59,12 @@ function clickSwapImg() {}
         <tbody>
           <tr>
             <td colspan="2" rowspan="3" valign="TOP">
-              <p align="center"><img src="image/scys.gif" loop="infinite" height="468"
+              <p align="center"><img src="image/scys.gif" loop="infinite" height="468"
+
                   width="72" border="0"></p>
             </td>
-            <td colspan="4" valign="TOP"> <img src="image/scysbt.jpg" height="200"
+            <td colspan="4" valign="TOP"> <img src="image/scysbt.jpg" height="200"
+
                 width="800" border="0"> </td>
           </tr>
           <tr>
@@ -41,23 +79,31 @@ function clickSwapImg() {}
                         <tbody>
                           <tr>
                             <td>
-                              <div style="text-align: center;"><b><a href=""><img
-                                      src="landscape/landro/1020072ps.jpg" alt=""
-                                      style="width: 123px; height: 89px;"></a> <a
-                                    href=""><img src="landscape/landro/1020148acr.jpg"
+                              <div style="text-align: center;"><b><a href=""><img
+
+                                      src="landscape/landro/1020072ps.jpg" alt=""
+
+                                      style="width: 123px; height: 89px;"></a> <a
+
+                                    href=""><img src="landscape/landro/1020148acr.jpg"
+
                                       alt="" style="width: 120px; height: 86px;"></a>
-                                  <img src="landscape/landchina/_MG_6554a.jpg" alt=""
+                                  <img src="landscape/landchina/_MG_6554a.jpg" alt=""
+
                                     style="width: 105px; height: 87px;"></b></div>
                               <div style="text-align: center;"><b><a href="sketch_landscape.html">landscape
-                                    sketch 风景画</a></b><a href="sketch_landscape.html"><b><span
+                                    sketch 风景画</a></b><a href="sketch_landscape.html"><b><span
+
                                       style="color: lime;">（see more 更多）</span></b></a><br>
                                 <b><span style="color: lime;"></span></b></div>
                             </td>
                             <td>
-                              <div style="text-align: center;"><b><img src="ipaint/paintx/P1080420web.jpg"
+                              <div style="text-align: center;"><b><img src="ipaint/paintx/P1080420web.jpg"
+
                                     alt="" style="width: 115px; height: 96px;"></b><br>
                               </div>
-                              <div style="text-align: center;"><b><a href="secai_painting.html"
+                              <div style="text-align: center;"><b><a href="secai_painting.html"
+
                                     title="painting">painting画作(more)</a></b></div>
                             </td>
                           </tr>
@@ -69,8 +115,10 @@ function clickSwapImg() {}
                     <td>
                       <p align="center"> </p>
                       <center>
-                        <p><a href="image/ezcaoduo.jpg" target="_blank"><img src="image/ezcaoduo0.jpg"
-                              height="98" width="142" border="0"></a><a href="image/ezcaoduo.jpg"
+                        <p><a href="image/ezcaoduo.jpg" target="_blank"><img src="image/ezcaoduo0.jpg"
+
+                              height="98" width="142" border="0"></a><a href="image/ezcaoduo.jpg"
+
                             target="_blank"><br>
                           </a><a href="image/ezcaoduo.jpg" target="_blank">
                             草垛（水粉，峨庄）</a> </p>
@@ -78,7 +126,8 @@ function clickSwapImg() {}
                       <p></p>
                     </td>
                     <td>
-                      <p align="center"><a href="image/ezsf.jpg" target="_blank"><img
+                      <p align="center"><a href="image/ezsf.jpg" target="_blank"><img
+
                             src="image/ezsf0.jpg" height="99" width="142" border="0"></a><br>
                         <a href="image/ezsf.jpg" target="_blank">峨庄农舍（水粉，峨庄）</a></p>
                     </td>
@@ -86,26 +135,31 @@ function clickSwapImg() {}
                       <p align="center"> </p>
                       <center></center>
                       <p></p>
-                      <p align="center"><a href="image/fang.jpg" target="_blank"><img
+                      <p align="center"><a href="image/fang.jpg" target="_blank"><img
+
                             src="image/fang0.jpg" height="96" width="131" border="0"></a><br>
                         <a href="image/fang.jpg" target="_blank">焦庄农家（水彩，焦庄）</a></p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p align="center"><a href="image/ezfangwu.jpg" target="_blank"><img
+                      <p align="center"><a href="image/ezfangwu.jpg" target="_blank"><img
+
                             src="image/ezfangwu0.jpg" height="101" width="141" border="0"></a><br>
                         <a href="image/ezfangwu.jpg" target="_blank">土房（水粉，峨庄）</a></p>
                     </td>
                     <td>
-                      <p align="center"><a href="image/huanghun.jpg" target="_blank"><img
+                      <p align="center"><a href="image/huanghun.jpg" target="_blank"><img
+
                             src="image/huanghun0.jpg" height="96" width="141" border="0"></a><br>
                         <a href="image/huanghun.jpg" target="_blank">暮色（水彩，焦庄）</a></p>
                     </td>
                     <td>
                       <p align="center"> </p>
-                      <center> <a href="image/watercolor.jpg" target="_blank"><img
-                            src="image/watercolor0.jpg" height="90" width="139"
+                      <center> <a href="image/watercolor.jpg" target="_blank"><img
+
+                            src="image/watercolor0.jpg" height="90" width="139"
+
                             border="0"></a><br>
                         <a href="image/watercolor.jpg" target="_blank">纯净的淄河（水彩，
                           马鞍山）</a> </center>
@@ -114,35 +168,42 @@ function clickSwapImg() {}
                   </tr>
                   <tr>
                     <td>
-                      <div align="center"><a href="image/gysfping.jpg" target="_blank"><img
+                      <div align="center"><a href="image/gysfping.jpg" target="_blank"><img
+
                             src="image/gysfping0.jpg" height="70" width="105" border="0"></a><br>
                         <a href="image/gysfping.jpg" target="_blank">水果静物（水粉）</a></div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/sfjw.jpg" target="_blank"><img
+                      <div align="center"><a href="image/sfjw.jpg" target="_blank"><img
+
                             src="image/sfjw0.jpg" height="70" width="99" border="0"></a><br>
                         <a href="image/sfjw.jpg" target="_blank">考前练习（水粉）</a></div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/lazhu.jpg" target="_blank"><img
+                      <div align="center"><a href="image/lazhu.jpg" target="_blank"><img
+
                             src="image/lazhu0.jpg" height="111" width="142" border="0"></a><br>
                         <a href="image/lazhu.jpg" target="_blank">烛光（油画，创作）</a></div>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div align="center"><a href="image/rose.jpg" target="_blank"><img
+                      <div align="center"><a href="image/rose.jpg" target="_blank"><img
+
                             src="image/rose0.jpg" height="142" width="112" border="0"></a><br>
                         <a href="image/rose.jpg" target="_blank">玫瑰（油画，亚麻布）</a></div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/flower.jpg" target="_blank"><img
+                      <div align="center"><a href="image/flower.jpg" target="_blank"><img
+
                             src="image/flower0.jpg" height="103" width="71" border="0"></a><br>
                         <a href="image/flower.jpg" target="_blank">盆花（水彩）</a></div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/dancaiwjh_web.jpg" target="_blank"><img
-                            src="image/dancaiwjh_webx.jpg" height="150" width="96"
+                      <div align="center"><a href="image/dancaiwjh_web.jpg" target="_blank"><img
+
+                            src="image/dancaiwjh_webx.jpg" height="150" width="96"
+
                             border="0"></a><br>
                         <a href="image/dancaiwjh_web.jpg" target="_blank">美术老师（木
                           炭、水彩）</a> </div>
@@ -150,77 +211,93 @@ function clickSwapImg() {}
                   </tr>
                   <tr>
                     <td>
-                      <div align="center"><a href="image/zszuoxiang.jpg" target="_blank"><img
-                            src="image/zszuoxiang0.jpg" height="141" width="107"
+                      <div align="center"><a href="image/zszuoxiang.jpg" target="_blank"><img
+
+                            src="image/zszuoxiang0.jpg" height="141" width="107"
+
                             border="0"></a><br>
                         <a href="image/zszuoxiang.jpg" target="_blank">坐折叠椅的女孩（油
                           画，棉布）</a></div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/oil_c.jpg" target="_blank"><img
+                      <div align="center"><a href="image/oil_c.jpg" target="_blank"><img
+
                             src="image/oil_cx.jpg" height="191" width="147" border="0"></a><br>
                         <a href="image/oil_c.jpg" target="_blank">夏日（油画）</a> </div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/father.jpg" target="_blank"><img
+                      <div align="center"><a href="image/father.jpg" target="_blank"><img
+
                             src="image/father0.jpg" height="140" width="102" border="0"></a><br>
                         <a href="image/father.jpg" target="_blank">父亲（油画）</a></div>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div align="center"><a href="image/nvhai.jpg" target="_blank"><img
+                      <div align="center"><a href="image/nvhai.jpg" target="_blank"><img
+
                             src="image/nvhai0.jpg" height="142" width="92" border="0"></a><br>
                         <a href="image/nvhai.jpg" target="_blank">女孩像（油画）</a></div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/nvxiang.jpg" target="_blank"><img
+                      <div align="center"><a href="image/nvxiang.jpg" target="_blank"><img
+
                             src="image/nvxiang0.jpg" height="142" width="102" border="0"></a><br>
                         <a href="image/nvxiang.jpg" target="_blank">少女（油画）</a></div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/xujuan.jpg" target="_blank"><img
+                      <div align="center"><a href="image/xujuan.jpg" target="_blank"><img
+
                             src="image/xujuan0.jpg" height="142" width="100" border="0"></a><br>
                         <a href="image/xujuan.jpg" target="_blank">肖像（油画）</a></div>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div align="center"><a href="image/oil_l.jpg" target="_blank"><img
+                      <div align="center"><a href="image/oil_l.jpg" target="_blank"><img
+
                             src="image/oil_lx.jpg" height="188" width="135" border="0"></a><br>
                         <a href="image/oil_l.jpg" target="_blank">站立的女子（油画）</a>
                       </div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/student600800.jpg" target="_blank"><img
+                      <div align="center"><a href="image/student600800.jpg" target="_blank"><img
+
                             src="image/studentx.jpg" height="134" width="100" border="0"></a><br>
                         <a href="image/student600800.jpg" target="_blank">学生（油画）</a>
                       </div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/zh2web.jpg" target="_blank"><img
-                            src="image/zh2wermeilsmall.jpg" alt="vermeil" height="150"
-                            width="127" border="0"></a><a href="image/zh2web.jpg"
+                      <div align="center"><a href="image/zh2web.jpg" target="_blank"><img
+
+                            src="image/zh2wermeilsmall.jpg" alt="vermeil" height="150"
+
+                            width="127" border="0"></a><a href="image/zh2web.jpg"
+
                           target="_blank"><br>
                           vermeil</a>（油画）</div>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div align="center"><a href="image/DSCN_cw2.jpg" target="_blank"><img
+                      <div align="center"><a href="image/DSCN_cw2.jpg" target="_blank"><img
+
                             src="image/DSCN_cw2x.jpg" height="125" width="160" border="0"></a><br>
                         <a href="image/DSCN_cw2.jpg" target="_blank">快餐静物</a>（水
                         粉） </div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/DSCN_cw3.jpg" target="_blank"><img
+                      <div align="center"><a href="image/DSCN_cw3.jpg" target="_blank"><img
+
                             src="image/DSCN_cw3x.jpg" height="140" width="190" border="0"></a><br>
                         <a href="image/DSCN_cw3.jpg" target="_blank">沙锅静物</a>（水
                         粉） </div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/DSCN_cw4.jpg" target="_blank"></a><a
-                          href="image/nnoilweb.jpg" target="_blank"><img src="image/nnoilwebx.jpg"
+                      <div align="center"><a href="image/DSCN_cw4.jpg" target="_blank"></a><a
+
+                          href="image/nnoilweb.jpg" target="_blank"><img src="image/nnoilwebx.jpg"
+
                             height="155" width="120" border="0"></a><br>
                         <a href="image/nnoilweb.jpg" target="_blank">教师</a>（油画）<br>
                       </div>
@@ -228,19 +305,23 @@ function clickSwapImg() {}
                   </tr>
                   <tr>
                     <td>
-                      <div align="center"><a href="image/DSCN_cw1.jpg" target="_blank"><img
+                      <div align="center"><a href="image/DSCN_cw1.jpg" target="_blank"><img
+
                             src="image/DSCN_cw1x.jpg" height="148" width="174" border="0"></a><br>
                         <a href="image/DSCN_cw1.jpg" target="_blank">红果静物</a>（水
                         粉）</div>
                     </td>
                     <td>
                       <div align="center">
-                        <table height="114" width="161" cellspacing="6" cellpadding="0"
+                        <table height="114" width="161" cellspacing="6" cellpadding="0"
+
                           border="2" bgcolor="#CCCCCC">
                           <tbody>
                             <tr>
-                              <td><a href="image/stillchaweb.jpg" target="_blank"><img
-                                    src="image/stillchasmall.jpg" height="114" width="161"
+                              <td><a href="image/stillchaweb.jpg" target="_blank"><img
+
+                                    src="image/stillchasmall.jpg" height="114" width="161"
+
                                     border="0"></a></td>
                             </tr>
                           </tbody>
@@ -249,23 +330,29 @@ function clickSwapImg() {}
                         粉）</div>
                     </td>
                     <td>
-                      <div align="center"><a href="image/DSCN_cw4.jpg" target="_blank"><img
-                            src="image/DSCN_cw4x.jpg" height="135" width="181" border="0"></a><a
+                      <div align="center"><a href="image/DSCN_cw4.jpg" target="_blank"><img
+
+                            src="image/DSCN_cw4x.jpg" height="135" width="181" border="0"></a><a
+
                           href="image/DSCN_cw4.jpg" target="_blank"><br>
                           有白菜的静物</a>（水粉）</div>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;">&nbsp;<a href="msjx/P1040992web.jpg"
+                    <td style="text-align: center;">&nbsp;<a href="msjx/P1040992web.jpg"
+
                         target="_blank"><img src="imagexxx/P1040992web.jpg" alt=""></a></td>
                     <td>
                       <div align="center">
-                        <table height="115" width="166" cellspacing="5" cellpadding="0"
+                        <table height="115" width="166" cellspacing="5" cellpadding="0"
+
                           border="3" bgcolor="#CCCCCC">
                           <tbody>
                             <tr>
-                              <td><a href="image/stillfishweb.jpg" target="_blank"><img
-                                    src="image/stillfishsmall.jpg" height="115"
+                              <td><a href="image/stillfishweb.jpg" target="_blank"><img
+
+                                    src="image/stillfishsmall.jpg" height="115"
+
                                     width="166" border="0"></a></td>
                             </tr>
                           </tbody>
@@ -275,12 +362,15 @@ function clickSwapImg() {}
                     </td>
                     <td>
                       <div align="center">
-                        <table height="73" width="102" cellspacing="5" cellpadding="0"
+                        <table height="73" width="102" cellspacing="5" cellpadding="0"
+
                           border="3" bgcolor="#CCCCCC">
                           <tbody>
                             <tr>
-                              <td><a href="image/stillboweb.jpg" target="_blank"><img
-                                    src="image/stillbosmall.jpg" height="112" width="157"
+                              <td><a href="image/stillboweb.jpg" target="_blank"><img
+
+                                    src="image/stillbosmall.jpg" height="112" width="157"
+
                                     border="0"></a></td>
                             </tr>
                           </tbody>
@@ -291,140 +381,183 @@ function clickSwapImg() {}
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/_MG_6947a.jpg"
-                        target="_blank"><img src="imagexxx/_MG_6947a.jpg" alt=""
+                    <td style="text-align: center;"><a href="msjx/_MG_6947a.jpg"
+
+                        target="_blank"><img src="imagexxx/_MG_6947a.jpg" alt=""
+
                           style="width: 100px; height: 67px;"></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/022607maranweb.jpg"
+                    <td style="text-align: center;"><a href="msjx/022607maranweb.jpg"
+
                         target="_blank"><img src="imagexxx/022607maranweb.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/20150523_181404a.jpg"
-                        target="_blank"><img src="imagexxx/20150523_181404a.jpg"
+                    <td style="text-align: center;"><a href="msjx/20150523_181404a.jpg"
+
+                        target="_blank"><img src="imagexxx/20150523_181404a.jpg"
+
                           alt="" style="width: 105px; height: 71px;"></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/195943590.jpeg"
-                        target="_blank"><img src="imagexxx/195943590.jpg" alt=""
+                    <td style="text-align: center;"><a href="msjx/195943590.jpeg"
+
+                        target="_blank"><img src="imagexxx/195943590.jpg" alt=""
+
                           style="width: 86px; height: 115px;"></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/1984946623.jpeg"
-                        target="_blank"><img src="imagexxx/1984946623.jpg" alt=""
+                    <td style="text-align: center;"><a href="msjx/1984946623.jpeg"
+
+                        target="_blank"><img src="imagexxx/1984946623.jpg" alt=""
+
                           style="width: 120px; height: 91px;"></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/DSC_0003web.jpg"
+                    <td style="text-align: center;"><a href="msjx/DSC_0003web.jpg"
+
                         target="_blank"><img src="imagexxx/DSC_0003web.jpg" alt=""></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/DSC_0028a.jpg"
+                    <td style="text-align: center;"><a href="msjx/DSC_0028a.jpg"
+
                         target="_blank"><img src="imagexxx/DSC_0028a.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/DSC_0247a.jpg"
-                        target="_blank"><img src="imagexxx/DSC_0247a.jpg" alt=""
+                    <td style="text-align: center;"><a href="msjx/DSC_0247a.jpg"
+
+                        target="_blank"><img src="imagexxx/DSC_0247a.jpg" alt=""
+
                           style="width: 120px; height: 85px;"></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/DSC_0425web.jpg"
+                    <td style="text-align: center;"><a href="msjx/DSC_0425web.jpg"
+
                         target="_blank"><img src="imagexxx/DSC_0425web.jpg" alt=""></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/DSC_0491web.jpg"
+                    <td style="text-align: center;"><a href="msjx/DSC_0491web.jpg"
+
                         target="_blank"><img src="imagexxx/DSC_0491web.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/DSC_0501web.jpg"
+                    <td style="text-align: center;"><a href="msjx/DSC_0501web.jpg"
+
                         target="_blank"><img src="imagexxx/DSC_0501web.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/DSC_0504web.jpg"
+                    <td style="text-align: center;"><a href="msjx/DSC_0504web.jpg"
+
                         target="_blank"><img src="imagexxx/DSC_0504web.jpg" alt=""></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/DSC_0508web.jpg"
+                    <td style="text-align: center;"><a href="msjx/DSC_0508web.jpg"
+
                         target="_blank"><img src="imagexxx/DSC_0508web.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/DSC_0536web.jpg"
+                    <td style="text-align: center;"><a href="msjx/DSC_0536web.jpg"
+
                         target="_blank"><img src="imagexxx/DSC_0536web.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/DSC_1187a.jpg"
+                    <td style="text-align: center;"><a href="msjx/DSC_1187a.jpg"
+
                         target="_blank"><img src="imagexxx/DSC_1187a.jpg" alt=""></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/DSCN3682web.jpg"
+                    <td style="text-align: center;"><a href="msjx/DSCN3682web.jpg"
+
                         target="_blank"><img src="imagexxx/DSCN3682web.jpg" alt=""></a></td>
-                    <td style="text-align: center;"><a href="msjx/flowerliweb.jpg"
+                    <td style="text-align: center;"><a href="msjx/flowerliweb.jpg"
+
                         target="_blank"><img src="imagexxx/flowerliweb.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/IMG_2104web.jpg"
+                    <td style="text-align: center;"><a href="msjx/IMG_2104web.jpg"
+
                         target="_blank"><img src="imagexxx/IMG_2104web.jpg" alt=""></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/IMG_2105web.jpg"
+                    <td style="text-align: center;"><a href="msjx/IMG_2105web.jpg"
+
                         target="_blank"><img src="imagexxx/IMG_2105web.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/IMG_2789web.jpg"
+                    <td style="text-align: center;"><a href="msjx/IMG_2789web.jpg"
+
                         target="_blank"><img src="imagexxx/IMG_2789web.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/IMG_2925web.jpg"
+                    <td style="text-align: center;"><a href="msjx/IMG_2925web.jpg"
+
                         target="_blank"><img src="imagexxx/IMG_2925web.jpg" alt=""></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/P1000727raw.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1000727raw.jpg"
+
                         target="_blank"><img src="imagexxx/P1000727raw.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/P1010339a.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1010339a.jpg"
+
                         target="_blank"><img src="imagexxx/P1010339a.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/P1010343a.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1010343a.jpg"
+
                         target="_blank"><img src="imagexxx/P1010343a.jpg" alt=""></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/P1010481a.jpg"
-                        target="_blank"><img src="imagexxx/P1010481a.jpg" alt=""
+                    <td style="text-align: center;"><a href="msjx/P1010481a.jpg"
+
+                        target="_blank"><img src="imagexxx/P1010481a.jpg" alt=""
+
                           style="width: 115px; height: 76px;"></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/P1090279a.jpg"
-                        target="_blank"><img src="imagexxx/P1090279a.jpg" alt=""
+                    <td style="text-align: center;"><a href="msjx/P1090279a.jpg"
+
+                        target="_blank"><img src="imagexxx/P1090279a.jpg" alt=""
+
                           style="width: 120px; height: 80px;"></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/P1030882a.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1030882a.jpg"
+
                         target="_blank"><img src="imagexxx/P1030882a.jpg" alt=""></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/P1040007a.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1040007a.jpg"
+
                         target="_blank"><img src="imagexxx/P1040007a.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/P1040843web.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1040843web.jpg"
+
                         target="_blank"><img src="imagexxx/P1040843web.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/P1040922web.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1040922web.jpg"
+
                         target="_blank"><img src="imagexxx/P1040922web.jpg" alt=""></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/P1050839web.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1050839web.jpg"
+
                         target="_blank"><img src="imagexxx/P1050839web.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/P1050914web.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1050914web.jpg"
+
                         target="_blank"><img src="imagexxx/P1050914web.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/P1050916e.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1050916e.jpg"
+
                         target="_blank"><img src="imagexxx/P1050916e.jpg" alt=""></a><br>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center;"><a href="msjx/P1080001-01.jpeg"
+                    <td style="text-align: center;"><a href="msjx/P1080001-01.jpeg"
+
                         target="_blank"><img src="imagexxx/P1080001-01.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/P1090076a.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1090076a.jpg"
+
                         target="_blank"><img src="imagexxx/P1090076a.jpg" alt=""></a><br>
                     </td>
-                    <td style="text-align: center;"><a href="msjx/P1090241a.jpg"
+                    <td style="text-align: center;"><a href="msjx/P1090241a.jpg"
+
                         target="_blank"><img src="imagexxx/P1090241a.jpg" alt=""></a><br>
                     </td>
                   </tr>
@@ -436,13 +569,20 @@ function clickSwapImg() {}
             </td>
           </tr>
           <tr>
-            <td colspan="4" valign="TOP">&nbsp; ［<a href="mysm.html" dynamicanimation="fpAnimformatRolloverFP1"
-                fprolloverstyle="font-family: 黑体; font-size: 18pt; color: #00FFFF; font-weight: bold"
-                onmouseover="rollIn(this)" onmouseout="rollOut(this)" language="Javascript1.2"><font
-                  color="#FFFFFF">素描</font></a>］[<a href="msjx.htm">美术教学</a>] [<a
-                href="smjc.htm">数码教程</a>]［<a onmouseover="rollIn(this)" onmouseout="rollOut(this)"
-                dynamicanimation="fpAnimformatRolloverFP1" fprolloverstyle="font-family: 黑体; font-size: 18pt; color: #00FFFF; font-weight: bold"
-                language="Javascript1.2" href="../dms.html" target="_blank"><font
+            <td colspan="4" valign="TOP">&nbsp; ［<a href="mysm.html" dynamicanimation="fpAnimformatRolloverFP1"
+
+                fprolloverstyle="font-family: 黑体; font-size: 18pt; color: #00FFFF; font-weight: bold"
+
+                onmouseover="rollIn(this)" onmouseout="rollOut(this)" language="Javascript1.2"><font
+
+                  color="#FFFFFF">素描</font></a>］[<a href="msjx.htm">美术教学</a>] [<a
+
+                href="smjc.htm">数码教程</a>]［<a onmouseover="rollIn(this)" onmouseout="rollOut(this)"
+
+                dynamicanimation="fpAnimformatRolloverFP1" fprolloverstyle="font-family: 黑体; font-size: 18pt; color: #00FFFF; font-weight: bold"
+
+                language="Javascript1.2" href="../dms.html" target="_blank"><font
+
                   color="#FFFFFF">商业作品</font></a>］ [<a href="zpzs.htm">电脑作品</a>]
             </td>
           </tr>
@@ -452,8 +592,10 @@ function clickSwapImg() {}
               者</font></a></font> </p>
       <p align="right"><br>
       </p>
-      <p align="left"><font color="#FFFFFF"><a href="../index.html" dynamicanimation="fpAnimformatRolloverFP1"
-            fprolloverstyle="font-size: 14pt; color: #FF0000; font-weight: bold"
+      <p align="left"><font color="#FFFFFF"><a href="../index.html" dynamicanimation="fpAnimformatRolloverFP1"
+
+            fprolloverstyle="font-size: 14pt; color: #FF0000; font-weight: bold"
+
             onmouseover="rollIn(this)" onmouseout="rollOut(this)" language="Javascript1.2">返
             回首页</a></font></p>
     </x-sas-window>

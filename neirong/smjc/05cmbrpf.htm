@@ -1,6 +1,41 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
+  <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  /* 仅在屏幕宽度小于 768px（手机和平板竖屏）时生效 */
+  @media screen and (max-width: 768px) {
+    
+    /* 强制让表格的所有组成部分都变成“块级元素”，从而上下排列 */
+    table, thead, tbody, tr, td { 
+      display: block !important; 
+      width: 100% !important; 
+      box-sizing: border-box;
+    }
+
+    /* 居中处理内容 */
+    td {
+      text-align: center !important;
+      padding: 10px !important;
+      border: none !important;
+    }
+
+    /* 极其重要：确保图片不会撑破屏幕 */
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* 确保嵌入的 YouTube 视频也自适应宽度 */
+    iframe {
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9; /* 保持 16:9 的比例 */
+    }
+  }
+</style>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>combustion2</title>
     <meta name="author" content="chen">
@@ -13,40 +48,50 @@
       <p align="left">同属discreet公司出品的合成软件combustion提供了对3dsmax很好的支持，由3d生成的文件可在
         combustion中作更多的处理。把3d与合成完美结合的是rpf文件格式，这种格式由3d软件生成，可存储更多的通道信息。</p>
       <p align="left">在3dsmax中，我们制做一段粒子爆炸的动画，render渲染输出的文件格式选择rpf。</p>
-      <p align="left"><img src="05cmb2_rpf_bombtextmotion/rpf01.jpg" height="450"
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/rpf01.jpg" height="450"
+
           width="455"></p>
       <p align="left">出现rpf文件的选项设置窗口，勾选store alpha
         channel保存透明通道，在右边的3dsmax通道信息中，各个选项有不同作用，这里我们将对快速运动的物体做运动模糊的处理，所以勾选velocity选项，记录速
         率信息。按下ok，然后生成动画序列。</p>
-      <p align="left"><img src="05cmb2_rpf_bombtextmotion/rpf02.jpg" height="300"
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/rpf02.jpg" height="300"
+
           width="575"></p>
       <p align="left">启动combustion，new新建一个合成项目。</p>
-      <p align="left"><img src="05cmb2_rpf_bombtextmotion/cmb_rpf01.jpg" height="999"
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/cmb_rpf01.jpg" height="999"
+
           width="1280"></p>
       <p align="left">进行合成设置，duration持续时间设为与即将导入的动画素材一致，需要注意的是，这里的合成模式mode后面选择
         3d，建立一个3d合成。</p>
-      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf02.jpg" height="326"
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf02.jpg" height="326"
+
           width="380"></p>
       <p align="left">然后导入素材。</p>
-      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf03.jpg" height="999"
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf03.jpg" height="999"
+
           width="1280"></p>
       <p align="left">选择已经生成好的rpf文件。</p>
-      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf04.jpg" height="801"
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf04.jpg" height="801"
+
           width="963"></p>
       <p align="left">在合成中选中刚导入的素材，点开operators菜单，添加一个rpf motion blur运动模糊特效滤镜。</p>
-      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf05.jpg" height="999"
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf05.jpg" height="999"
+
           width="1280"></p>
       <p align="left">打开animate动画记录按钮，把时间标移动到第9帧，或是在图示位置输入9，切换到rpf motion
         blur的控制面板，把amount的值设到100，表示从动画开始到第9帧之后运动模糊达到100。</p>
-      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf06.jpg" height="999"
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf06.jpg" height="999"
+
           width="1280"></p>
       <p align="left">之后关闭动画纪录。我们可以拖动时间条预览，原素材已经发生了运动模糊，这样看起来更加接近于现实的视觉效果。再利用
         combustion的内置粒子库加一个星空背景。</p>
-      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf07.jpg" height="999"
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf07.jpg" height="999"
+
           width="1280"></p>
       <p align="left">好，最后输出动画。到files菜单按下render，文件格式选tga，通道选color不用保存透明，设好输出路径、取
         文件名，按下process按钮生成动画。</p>
-      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf08.jpg" height="643"
+      <p align="left"><img src="05cmb2_rpf_bombtextmotion/com_rpf08.jpg" height="643"
+
           width="1018"></p>
       <p align="left"><a href="05sbomb.rmvb" target="_blank">sample</a></p>
       <p align="left">利用3dsmax生成rpf格式文件，存储相应的通道信息，然后就可以在combustion中做调节了。
