@@ -2,41 +2,53 @@
   <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-  /* 仅在屏幕宽度小于 768px（手机和平板竖屏）时生效 */
+  /* 仅在手机/平板（屏幕宽度小于 768px）生效 */
   @media screen and (max-width: 768px) {
     
-    /* 强制让表格的所有组成部分都变成“块级元素”，从而上下排列 */
+    /* 强制重置表格结构：解决重叠的核心 */
     table, thead, tbody, tr, td { 
       display: block !important; 
       width: 100% !important; 
-      box-sizing: border-box;
+      height: auto !important;      /* 解决重叠：删除固定高度 */
+      min-height: 0 !important;     /* 解决重叠：重置最小高度 */
+      position: static !important;  /* 解决重叠：防止绝对定位漂浮 */
+      float: none !important;       /* 解决错乱：防止浮动导致位置偏移 */
+      box-sizing: border-box !important;
+      overflow: visible !important; /* 确保内容不会被裁切 */
     }
 
-    /* 居中处理内容 */
+    /* 优化单元格（现在的每一行）的外观 */
     td {
       text-align: center !important;
-      padding: 10px !important;
-      border: none !important;
+      padding: 15px 10px !important; /* 给内容留出上下呼吸空间 */
+      border-bottom: 1px solid #eee !important; /* 单元格之间加一条浅色分割线 */
+      white-space: normal !important; /* 解决错乱：强制文字自动换行 */
     }
 
-    /* 极其重要：确保图片不会撑破屏幕 */
+    /* 隐藏表格中可能存在的空单元格（通常是用来占位的） */
+    td:empty {
+      display: none !important;
+    }
+
+    /* 图片完美适配：防止撑破屏幕 */
     img {
       max-width: 100% !important;
       height: auto !important;
-      display: block;
-      margin: 0 auto;
+      display: block !important;
+      margin: 10px auto !important; /* 图片上下留白并居中 */
     }
 
-    /* 确保嵌入的 YouTube 视频也自适应宽度 */
+    /* YouTube 视频与 Iframe 适配 */
     iframe {
       width: 100% !important;
       height: auto !important;
-      aspect-ratio: 16 / 9; /* 保持 16:9 的比例 */
+      aspect-ratio: 16 / 9; /* 保持标准视频比例 */
+      border: none !important;
     }
   }
 </style>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+     <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
     <meta name="ProgId" content="FrontPage.Editor.Document">
     <title>cgart</title>
     <meta name="author" content="chen">
